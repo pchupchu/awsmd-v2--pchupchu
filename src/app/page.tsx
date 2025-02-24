@@ -1,3 +1,4 @@
+import About from './components/about';
 import Hero from './components/hero';
 import Services from './components/services';
 
@@ -9,6 +10,7 @@ export default function Home() {
           <Hero />
         </div>
         <Services />
+        <About />
       </main>
       <footer className=''>footer</footer>
     </div>
