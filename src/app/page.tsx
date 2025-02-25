@@ -12,7 +12,11 @@ export default function Home() {
         <div className='p-1'>
           <Hero />
         </div>
-        <RunningLine xDirection='-100%' textStyle='text-[#2CA8FE]' />
+        <RunningLine
+          initialX='0'
+          xDirection='-100%'
+          textStyle='text-[#2CA8FE]'
+        />
         <Services />
         <About />
         <Development />
