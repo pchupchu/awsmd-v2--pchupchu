@@ -2,6 +2,8 @@ import Image from 'next/image';
 
 import RunningLine from '@/components/running-line';
 
+import ScreensList from './screens-list';
+
 const Development = () => {
   return (
     <section className='bg-[#0D0F11]'>
@@ -32,6 +34,7 @@ const Development = () => {
         />
       </div>
       <RunningLine initialX='-100%' xDirection='0' textStyle='text-white/5' />
+      <ScreensList />
     </section>
   );
 };
