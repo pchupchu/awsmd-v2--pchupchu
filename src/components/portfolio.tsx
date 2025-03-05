@@ -48,7 +48,7 @@ const Portfolio = () => {
           We don&apos;t do cookie-cutter solution
         </h3>
       </div>
-      <ul className='mb-16 flex flex-col gap-[30px]'>
+      <ul className='mb-5 flex flex-col gap-[30px]'>
         {projects.map((project) => (
           <Project
             key={project.id}
