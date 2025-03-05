@@ -59,7 +59,7 @@ const Portfolio = () => {
         ))}
       </ul>
       <a
-        className='flex items-center gap-3 rounded-[40px] bg-[#242424] p-[15px] pr-8 text-base font-medium capitalize leading-tight tracking-tight text-white'
+        className='flex items-center gap-3 rounded-[40px] border border-[#242424] bg-[#242424] p-[15px] pr-8 text-base font-medium capitalize leading-tight tracking-tight text-white'
         href='https://dribbble.com/awsmd'
         target='_blank'
         rel='noreferrer'>
