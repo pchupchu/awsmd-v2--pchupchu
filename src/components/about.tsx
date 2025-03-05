@@ -38,41 +38,39 @@ const About = () => {
           <div className='h-4 w-full border-l-[1px] border-r-[1px] border-t-[1px] border-black/20'></div>
         </div>
         <div>
+          <p className='mb-[50px] mt-7 font-secondary text-base leading-[18px] text-[#838383]'>
+            <span className='text-black'>Solid Strategy</span> aligned with
+            business needs and robust data analysis are fundamental ingredients
+            to&nbsp;extract actionable insights
+          </p>
           <div>
-            <p className='font-secondary mb-[50px] mt-7 text-base leading-[18px] text-[#838383]'>
-              <span className='text-black'>Solid Strategy</span> aligned with
-              business needs and robust data analysis are fundamental
-              ingredients to&nbsp;extract actionable insights
-            </p>
-            <div>
-              <h4 className='mb-6 text-base font-semibold capitalize leading-[18px] text-[#999796]'>
-                Some numbers about us
-              </h4>
-              <ul className='grid grid-cols-1 gap-y-2'>
-                {aboutData.map((data, index) => (
-                  <li
-                    className='relative h-[180px] overflow-hidden rounded-[30px] bg-[#F2F0F1] px-5 py-3'
-                    key={index}>
-                    <div className='max-w-40'>
-                      <span className='font-secondary mb-1 text-4xl font-bold leading-[44px]'>
-                        {data.number}
-                      </span>
-                      <p className='text-[12px] leading-4 text-[#9B9B9B]'>
-                        {data.text}
-                      </p>
-                    </div>
-                    <video
-                      className='absolute bottom-0 right-0 z-10 max-w-36 rounded-br-[30px] object-cover'
-                      autoPlay
-                      playsInline
-                      muted
-                      loop>
-                      <source src={data.videoSrc} type='video/mp4' />
-                    </video>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <h4 className='mb-6 text-base font-semibold capitalize leading-[18px] text-[#999796]'>
+              Some numbers about us
+            </h4>
+            <ul className='grid grid-cols-1 gap-y-2'>
+              {aboutData.map((data, index) => (
+                <li
+                  className='relative h-[180px] overflow-hidden rounded-[30px] bg-[#F2F0F1] px-5 py-3'
+                  key={index}>
+                  <div className='max-w-40'>
+                    <span className='mb-1 font-secondary text-4xl font-bold leading-[44px]'>
+                      {data.number}
+                    </span>
+                    <p className='text-[12px] leading-4 text-[#9B9B9B]'>
+                      {data.text}
+                    </p>
+                  </div>
+                  <video
+                    className='absolute bottom-0 right-0 z-10 max-w-36 rounded-br-[30px] object-cover'
+                    autoPlay
+                    playsInline
+                    muted
+                    loop>
+                    <source src={data.videoSrc} type='video/mp4' />
+                  </video>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
