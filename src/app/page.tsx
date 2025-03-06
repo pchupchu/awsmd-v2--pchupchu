@@ -1,3 +1,4 @@
+import Banner from '@/components/banner';
 import Portfolio from '@/components/portfolio';
 import RunningLine from '@/components/running-line';
 
@@ -22,6 +23,7 @@ export default function Home() {
         <About />
         <Development />
         <Portfolio />
+        <Banner />
       </main>
       <footer className=''>footer</footer>
     </div>
