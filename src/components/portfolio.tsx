@@ -50,12 +50,13 @@ const Portfolio = () => {
       </div>
       <ul className='mb-5 flex flex-col gap-[30px]'>
         {projects.map((project) => (
-          <Project
-            key={project.id}
-            title={project.title}
-            description={project.description}
-            image={project.image}
-          />
+          <li key={project.id}>
+            <Project
+              title={project.title}
+              description={project.description}
+              image={project.image}
+            />
+          </li>
         ))}
       </ul>
       <a
