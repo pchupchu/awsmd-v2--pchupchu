@@ -14,7 +14,7 @@ interface RunningLineProps {
 
 const RunningLine = ({ xDirection, textStyle, initialX }: RunningLineProps) => {
   return (
-    <div className='flex selection:overflow-x-hidden'>
+    <div className='flex overflow-x-hidden'>
       {Array.from({ length: 2 }).map((_, i) => (
         <Fragment key={i}>
           <motion.div
