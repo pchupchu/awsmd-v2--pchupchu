@@ -1,4 +1,5 @@
 import Banner from '@/components/banner';
+import Blog from '@/components/blog';
 import Portfolio from '@/components/portfolio';
 import RunningLine from '@/components/running-line';
 
@@ -24,6 +25,7 @@ export default function Home() {
         <Development />
         <Portfolio />
         <Banner />
+        <Blog />
       </main>
       <footer className=''>footer</footer>
     </div>
