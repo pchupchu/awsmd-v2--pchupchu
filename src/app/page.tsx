@@ -1,6 +1,7 @@
 import Banner from '@/components/banner';
 import Blog from '@/components/blog';
 import Portfolio from '@/components/portfolio';
+import Reviews from '@/components/reviews';
 import RunningLine from '@/components/running-line';
 
 import About from '../components/about';
@@ -26,8 +27,9 @@ export default function Home() {
         <Portfolio />
         <Banner />
         <Blog />
+        <Reviews />
       </main>
-      <footer className=''>footer</footer>
+      <footer>footer</footer>
     </div>
   );
 }

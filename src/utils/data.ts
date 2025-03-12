@@ -35,3 +35,30 @@ export const projects = [
     image: '/projects/ritilo.jpg',
   },
 ];
+
+export const reviews = [
+  {
+    id: 1,
+    name: 'Joseph Clark',
+    profession: 'Co-Founder',
+    company: 'Omegachain',
+    description: "We've been truly happy with Awsmd's work.",
+    image: '/reviews/joseph.avif',
+  },
+  {
+    id: 2,
+    name: 'Oleksandr Kovalenko',
+    profession: 'Creative Art Director',
+    company: 'Loook Studio',
+    description: "Awsmd has succeeded in every task we've given them.",
+    image: '/reviews/oleksandr.avif',
+  },
+  {
+    id: 3,
+    name: 'Matteo Russo',
+    profession: 'Co-Founder',
+    company: 'Care4',
+    description: "They've done a great job, and they're quite professional.",
+    image: '/reviews/matteo.avif',
+  },
+];
