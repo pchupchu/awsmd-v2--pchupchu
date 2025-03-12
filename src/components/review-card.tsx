@@ -41,7 +41,7 @@ const ReviewCard = ({
               fill
             />
           </div>
-          <div className='min-w-14 max-w-min pr-2'>
+          <div className='min-w-16 max-w-min pr-2 sm:max-w-72'>
             <h3 className='mb-2 text-[15px] font-semibold leading-[1.2] tracking-tight'>
               {name}
             </h3>
@@ -50,7 +50,7 @@ const ReviewCard = ({
             </p>
           </div>
         </div>
-        <p className='ml-auto max-w-min text-[11px] leading-[1.2] tracking-tight text-[#7f7f7f]'>
+        <p className='xs:max-w-fit ml-auto max-w-min text-[11px] leading-[1.2] tracking-tight text-[#7f7f7f]'>
           {company}
         </p>
         <ReviewsControls reviews={reviews} />

@@ -18,7 +18,7 @@ const ReviewsControls = ({ reviews }: ReviewsControlsProps) => {
   const swiper = useSwiper();
 
   return (
-    <div className='ml-3 flex items-center justify-center gap-3 text-xl text-[#7f7f7f] sm:ml-6 sm:gap-5'>
+    <div className='xs:ml-6 xs:gap-5 ml-3 flex items-center justify-center gap-3 text-xl text-[#7f7f7f]'>
       <button
         className={cn('h-5 w-5', swiper.realIndex === 0 && 'opacity-50')}
         type='button'
