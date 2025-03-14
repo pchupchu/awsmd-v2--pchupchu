@@ -20,7 +20,7 @@ const Reviews = () => {
   };
 
   return (
-    <section className='container pb-[30px] pt-10'>
+    <section id='#reviews' className='container pb-[30px] pt-10'>
       <Title number='06' title='What Our Clients Say' />
       <div className='mt-8 w-full'>
         <Swiper

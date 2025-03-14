@@ -26,7 +26,7 @@ const aboutData = [
 
 const About = () => {
   return (
-    <section>
+    <section id='about'>
       <div className='container mb-[33px]'>
         <div>
           <div className='mb-5 flex flex-col gap-4'>

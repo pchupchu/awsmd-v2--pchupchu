@@ -22,7 +22,9 @@ const Blog = () => {
   };
 
   return (
-    <section className='container bg-[#0d0d0d] pb-10 pt-[30px] text-white'>
+    <section
+      id='#blog'
+      className='container bg-[#0d0d0d] pb-10 pt-[30px] text-white'>
       <div className='relative flex flex-col'>
         <div className='mb-10 flex flex-col gap-3'>
           <h2 className='text-base font-medium capitalize text-[#999999]'>

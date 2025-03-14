@@ -5,10 +5,9 @@ import { HiOutlineArrowLongDown } from 'react-icons/hi2';
 const Hero = () => {
   return (
     <section className='container rounded-[15px] bg-fuchsia-300 px-3 py-2 text-white'>
-      <div className='h-20'>header</div>
-      <div className='font-accent mb-4 flex flex-col pt-[73px] text-6xl uppercase leading-none'>
+      <div className='mb-4 flex flex-col pt-[73px] font-accent text-6xl uppercase leading-none'>
         <h1>We create</h1>
-        <span className='font-accent_bold text-right tracking-tighter'>
+        <span className='text-right font-accent_bold tracking-tighter'>
           <i className='pr-1'>a</i>wesome
         </span>
         <div className='font-accent_bold tracking-tighter'>design</div>
