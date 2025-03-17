@@ -36,6 +36,35 @@ export default {
         border: 'hsl(var(--border))',
       },
       backgroundImage: {},
+      keyframes: {
+        scaleImage: {
+          '0%': {
+            transform: 'scale(1)',
+          },
+          '100%': {
+            transform: 'scale(1.2)',
+          },
+        },
+        textToTheLeft: {
+          '0%': {
+            transform: 'translateZ(0)',
+          },
+          '100%': {
+            transform: 'translate3d(-100%,0,0)',
+          },
+        },
+        textToTheRight: {
+          '0%': {
+            transform: 'translate3d(-100%,0,0)',
+          },
+          '100%': {
+            transform: 'translateZ(0)',
+          },
+        },
+      },
+      animation: {
+        scaleImage: 'scaleImage 4s infinite alternate',
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 import { services } from '@/utils/data';
@@ -20,28 +21,35 @@ const Services = () => {
           return (
             <li key={index}>
               <Link
-                className='relative flex flex-col rounded-lg bg-cover bg-center bg-no-repeat p-6 text-white'
+                className='relative block overflow-hidden rounded-lg p-6 text-white'
+                href='#'
                 style={{
                   backgroundColor: `${service.backgroundColor}`,
-                  backgroundImage: `url(${service.imgSrc})`,
-                }}
-                href='#'>
-                <h3 className='mb-24 font-secondary text-[33px] font-medium uppercase leading-tight tracking-tighter'>
-                  {service.title}
-                </h3>
-                <p className='mb-5 font-secondary text-[14px] font-medium leading-tight tracking-tight'>
-                  {service.description}
-                </p>
-                <div className='h-[1px] w-full bg-white'></div>
-                <ul className='mt-3 flex flex-wrap gap-1'>
-                  {service.stack.map((stack, index) => (
-                    <li
-                      className='rounded-[40px] bg-white/40 px-4 py-[2px] text-sm font-medium tracking-tight'
-                      key={index}>
-                      {stack}
-                    </li>
-                  ))}
-                </ul>
+                }}>
+                <Image
+                  className='animate-scaleImage absolute inset-0 z-0 object-cover'
+                  src={service.imgSrc}
+                  alt={service.title}
+                  fill
+                />
+                <div className='relative z-10 flex flex-col'>
+                  <h3 className='mb-24 font-secondary text-[33px] font-medium uppercase leading-tight tracking-tighter'>
+                    {service.title}
+                  </h3>
+                  <p className='mb-5 font-secondary text-[14px] font-medium leading-tight tracking-tight'>
+                    {service.description}
+                  </p>
+                  <div className='h-[1px] w-full bg-white'></div>
+                  <ul className='mt-3 flex flex-wrap gap-1'>
+                    {service.stack.map((stack, index) => (
+                      <li
+                        className='rounded-[40px] bg-white/40 px-4 py-[2px] text-sm font-medium tracking-tight'
+                        key={index}>
+                        {stack}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </Link>
             </li>
           );
