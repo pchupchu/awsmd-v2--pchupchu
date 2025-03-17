@@ -1,39 +1,8 @@
 import Link from 'next/link';
 
-import Title from './title';
+import { services } from '@/utils/data';
 
-const services = [
-  {
-    title: 'Mobile app development',
-    description:
-      'Many years of expertise in mobile development allow us to design architecture and create bespoke native applications for Apple iOS and Google Android.',
-    imgSrc: '/services/mobile.png',
-    backgroundColor: '#E4E3DF',
-    stack: ['Swift', 'React Native', 'FlutterJS', 'Kotlin'],
-  },
-  {
-    title: 'Solid design solution',
-    description:
-      'We are driven by user-centered design that drives productivity and increases revenue. Our expertise and ingenuity are remarkable, yet we always strive to outdo and outperform our previous achievements.',
-    imgSrc: '/services/solutions.png',
-    backgroundColor: '#F1AE86',
-    stack: [
-      'Figma',
-      'Adobe AfterEffects',
-      'Adobe Illustrator',
-      'Blender',
-      'Cinema 4D',
-    ],
-  },
-  {
-    title: 'Web development',
-    description:
-      'Our adaptive design components are built using perfectly structured and readable code. We make sure that the development solutions are well-optimized and work flawlessly across devices and browsers.',
-    imgSrc: '/services/development.png',
-    backgroundColor: '#90A6D0',
-    stack: ['ReactJS', 'VueJS', 'NodeJS', 'Webflow'],
-  },
-];
+import Title from './title';
 
 const Services = () => {
   return (
@@ -57,10 +26,10 @@ const Services = () => {
                   backgroundImage: `url(${service.imgSrc})`,
                 }}
                 href='#'>
-                <h3 className='font-secondary mb-24 text-[33px] font-medium uppercase leading-tight tracking-tighter'>
+                <h3 className='mb-24 font-secondary text-[33px] font-medium uppercase leading-tight tracking-tighter'>
                   {service.title}
                 </h3>
-                <p className='font-secondary mb-5 text-[14px] font-medium leading-tight tracking-tight'>
+                <p className='mb-5 font-secondary text-[14px] font-medium leading-tight tracking-tight'>
                   {service.description}
                 </p>
                 <div className='h-[1px] w-full bg-white'></div>
