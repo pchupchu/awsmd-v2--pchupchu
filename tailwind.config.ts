@@ -61,9 +61,37 @@ export default {
             transform: 'translateZ(0)',
           },
         },
+        btnPulse: {
+          '0%': {
+            transform: 'translate(-50%,-50%) scale(1)',
+            opacity: '1',
+          },
+          '70%': {
+            transform: 'translate(-50%,-50%) scale(1.6)',
+            opacity: '0',
+          },
+          '70.1%': {
+            transform: 'translate(-50%,-50%) scale(1)',
+            opacity: '0',
+          },
+          '100%': {
+            transform: 'translate(-50%,-50%) scale(1)',
+            opacity: '1',
+          },
+        },
+        btnRotate: {
+          '0%': {
+            transform: 'rotate(0deg)',
+          },
+          '100%': {
+            transform: 'rotate(360deg)',
+          },
+        },
       },
       animation: {
         scaleImage: 'scaleImage 4s infinite alternate',
+        btnPulse: 'btnPulse 2s infinite',
+        btnRotate: 'btnRotate 10s linear infinite',
       },
     },
   },

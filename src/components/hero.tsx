@@ -23,7 +23,7 @@ const Hero = () => {
           </div>
           <div className='mb-5 flex items-center gap-4'>
             <button
-              className='flex h-14 w-14 items-center justify-center rounded-full bg-white text-2xl text-black'
+              className='before:animate-btnPulse relative flex h-16 w-16 items-center justify-center rounded-full bg-white text-2xl text-black before:absolute before:left-1/2 before:top-1/2 before:block before:h-[105%] before:w-[105%] before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:border-[2px] before:border-white/50 before:content-[""]'
               type='button'>
               <HiOutlineArrowLongDown className='text-2xl' />
             </button>
@@ -141,6 +141,7 @@ const Hero = () => {
             />
             <div className='absolute -right-10 top-10 z-10 bg-[url("/play-btn.png")] bg-center bg-no-repeat'>
               <Image
+                className='animate-btnRotate'
                 src='/click-to-play.png'
                 width={83}
                 height={83}
