@@ -16,7 +16,7 @@ export default function Home() {
     <div className='font-primary'>
       <Header />
       <main>
-        <div className='p-1'>
+        <div className='p-[5px]'>
           <Hero />
         </div>
         <RunningLine

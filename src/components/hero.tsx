@@ -14,7 +14,7 @@ const Hero = () => {
           playsInline
           autoPlay></video>
         <div className='container relative z-30 px-3 py-2 text-white'>
-          <div className='mb-4 flex flex-col pt-[73px] font-accent text-6xl uppercase leading-none'>
+          <div className='mb-4 flex flex-col pt-28 font-accent text-5xl uppercase leading-[0.9]'>
             <h1>We create</h1>
             <span className='text-right font-accent_bold tracking-tighter'>
               <i className='pr-1'>a</i>wesome
@@ -34,7 +34,7 @@ const Hero = () => {
             </div>
           </div>
           <a
-            className='mb-5 flex items-center gap-[18px]'
+            className='mb-5 flex items-center gap-[18px] py-[6px]'
             href='https://clutch.co/profile/awsmd'>
             <div className='flex items-center gap-2 rounded-[74px] bg-white py-[6px] pl-[6px] pr-3 text-black'>
               <svg
