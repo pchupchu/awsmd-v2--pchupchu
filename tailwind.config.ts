@@ -33,7 +33,7 @@ export default {
         background: '#ffffff',
         foreground: '#000000',
 
-        border: 'hsl(var(--border))',
+        border: '#e5e5e5',
       },
       backgroundImage: {},
       keyframes: {
