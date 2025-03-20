@@ -1,6 +1,9 @@
+'use client';
+
 import Image from 'next/image';
 
 import { HiOutlineArrowLongDown } from 'react-icons/hi2';
+import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
   return (
@@ -19,11 +22,29 @@ const Hero = () => {
             <span className='text-right font-accent_bold tracking-tighter'>
               <i className='pr-1'>a</i>wesome
             </span>
-            <div className='font-accent_bold tracking-tighter'>design</div>
+            <span className='font-accent_bold tracking-tighter'>
+              development
+            </span>
+            <TypeAnimation
+              className='font-accent_bold tracking-tighter after:animate-pulse after:font-secondary after:font-bold'
+              sequence={['development', 2000, 'desing', 2000, 'branding', 2000]}
+              speed={50}
+              wrapper='span'
+              repeat={Infinity}
+            />
+            {/* <ReactTyped
+              className='font-accent_bold tracking-tighter'
+              strings={['development', 'desing', 'branding']}
+              typeSpeed={1000}
+              loop
+              backSpeed={1000}
+              cursorChar='>'
+              showCursor={true}
+            /> */}
           </div>
           <div className='mb-5 flex items-center gap-4'>
             <button
-              className='before:animate-btnPulse relative flex h-16 w-16 items-center justify-center rounded-full bg-white text-2xl text-black before:absolute before:left-1/2 before:top-1/2 before:block before:h-[105%] before:w-[105%] before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:border-[2px] before:border-white/50 before:content-[""]'
+              className='relative flex h-16 w-16 items-center justify-center rounded-full bg-white text-2xl text-black before:absolute before:left-1/2 before:top-1/2 before:block before:h-[105%] before:w-[105%] before:-translate-x-1/2 before:-translate-y-1/2 before:animate-btnPulse before:rounded-full before:border-[2px] before:border-white/50 before:content-[""]'
               type='button'>
               <HiOutlineArrowLongDown className='text-2xl' />
             </button>
