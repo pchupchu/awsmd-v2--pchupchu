@@ -22,25 +22,13 @@ const Hero = () => {
             <span className='text-right font-accent_bold tracking-tighter'>
               <i className='pr-1'>a</i>wesome
             </span>
-            <span className='font-accent_bold tracking-tighter'>
-              development
-            </span>
             <TypeAnimation
-              className='font-accent_bold tracking-tighter after:animate-pulse after:font-secondary after:font-bold'
+              className='inline-block font-accent_bold tracking-tighter after:animate-pulse after:font-secondary after:font-bold'
               sequence={['development', 2000, 'desing', 2000, 'branding', 2000]}
               speed={50}
               wrapper='span'
               repeat={Infinity}
             />
-            {/* <ReactTyped
-              className='font-accent_bold tracking-tighter'
-              strings={['development', 'desing', 'branding']}
-              typeSpeed={1000}
-              loop
-              backSpeed={1000}
-              cursorChar='>'
-              showCursor={true}
-            /> */}
           </div>
           <div className='mb-5 flex items-center gap-4'>
             <button
