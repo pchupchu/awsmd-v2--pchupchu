@@ -6,7 +6,9 @@ import Logo from './logo';
 
 const Footer = () => {
   return (
-    <footer className='relative bg-[#c9d0d5] pb-[18px] pt-[68px] text-black'>
+    <footer
+      className='relative bg-[#c9d0d5] pb-[18px] pt-[68px] text-black'
+      id='#footer'>
       <div className='absolute left-0 top-0 z-10 h-7 w-full rounded-b-[20px] bg-white'></div>
       <div className='container'>
         <Logo

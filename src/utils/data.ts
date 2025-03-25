@@ -95,3 +95,32 @@ export const reviews = [
     image: '/reviews/matteo.avif',
   },
 ];
+
+export const links = [
+  { id: '01', title: 'home', href: '/' },
+  {
+    id: '02',
+    title: 'our services',
+    href: '#services',
+  },
+  {
+    id: '03',
+    title: 'about us',
+    href: '#about',
+  },
+  {
+    id: '04',
+    title: 'portfolio',
+    href: '#portfolio',
+  },
+  {
+    id: '05',
+    title: 'reviews',
+    href: '#reviews',
+  },
+  {
+    id: '06',
+    title: 'contact us',
+    href: '#footer',
+  },
+];
