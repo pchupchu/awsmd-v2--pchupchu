@@ -17,13 +17,13 @@ const Hero = () => {
           playsInline
           autoPlay></video>
         <div className='container relative z-30 px-3 py-2 text-white'>
-          <div className='mb-4 flex flex-col pt-28 font-accent text-5xl uppercase leading-[0.9]'>
+          <div className='mb-4 flex flex-col pt-28 font-accent text-[46px] uppercase leading-[0.9]'>
             <h1>We create</h1>
             <span className='text-right font-accent_bold tracking-tighter'>
               <i className='pr-1'>a</i>wesome
             </span>
             <TypeAnimation
-              className='inline-block font-accent_bold tracking-tighter after:animate-pulse after:font-secondary after:font-bold'
+              className='inline-block font-accent_bold tracking-tighter after:animate-pulse after:font-secondary after:font-semibold'
               sequence={['development', 2000, 'desing', 2000, 'branding', 2000]}
               speed={50}
               wrapper='span'
