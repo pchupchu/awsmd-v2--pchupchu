@@ -5,7 +5,9 @@ import Title from './title';
 
 const Portfolio = () => {
   return (
-    <section className='container flex flex-col items-center gap-[45px] pb-[55px] pt-[100px]'>
+    <section
+      className='container flex flex-col items-center gap-[45px] pb-[55px] pt-[100px]'
+      id='#portfolio'>
       <div className='flex flex-col gap-4'>
         <Title number='03' title='Our Portfolio' />
         <h3 className='font-secondary text-[33px] leading-[1.12] tracking-tight'>

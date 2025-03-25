@@ -7,7 +7,7 @@ import Title from './title';
 
 const Services = () => {
   return (
-    <div className='container py-[60px]'>
+    <div className='container py-[60px]' id='#services'>
       <div className='mb-10'>
         <Title number='01' title='Our services' />
         <p className='mt-6 text-2xl leading-tight tracking-tighter text-black/40'>
@@ -27,7 +27,7 @@ const Services = () => {
                   backgroundColor: `${service.backgroundColor}`,
                 }}>
                 <Image
-                  className='animate-scaleImage absolute inset-0 z-0 object-cover'
+                  className='absolute inset-0 z-0 animate-scaleImage object-cover'
                   src={service.imgSrc}
                   alt={service.title}
                   fill
